@@ -1,6 +1,14 @@
 {
-"name" : "いろいろ",
-"symbol" : "m",
-"data_url" : "https://script.google.com/macros/s/AKfycbx7xraO-n31ZYc3ZBF_dJ-TSXkdmwFw140SpavgQ8mWM8sTncJOr_c-GX3E_GRSRhjo/exec",
+  "name" : "いろいろ",
+  "symbol" : "m",
+  "data_url" : "https://script.google.com/macros/s/XXXXX/exec",
 
+  "level_order" : [
+    "m202601",
+    "m202602",
+    "m202603",
+    "m202604",
+    "m202605",
+    "m202606"
+  ]
 }
