@@ -99,23 +99,26 @@ info.sort(function(a,b){
 		}
 	} else {
 		// そうでない場合はレベル順->タイトル順にソート
-		info.sort(
-	function(a,b){
+info.sort(function(a,b){
 
-		var aLv = a["level"].toString();
-		var bLv = b["level"].toString();
+    var aLv = a["level"].toString();
+    var bLv = b["level"].toString();
 
-		if( aLv < bLv ){
-			return -1;
+    if(aLv < bLv){
+        return -1;
 
-		} else if( aLv > bLv ){
-			return 1;
+    } else if(aLv > bLv){
+        return 1;
 
-		} else {
-			return 0;
-		}
-	}
-);
+    } else {
+
+        return a.title.localeCompare(
+            b.title,
+            'ja'
+        );
+
+    }
+});
 	}
 	
     // 表のクリア
