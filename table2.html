@@ -77,19 +77,18 @@ function makeBMSTable(info, mark, order) {
 		    info[j]["_index"]=index;
 		}
 
-		info.sort(function(a,b){
-		    if(a["_index"] < b["_index"]){
-				return -1;
-		    } else if(a["_index"] > b["_index"]){
-				return 1;
-			} else if( a["title"].toLowerCase() < b["title"].toLowerCase() ){
-				return -1;
-			} else if( a["title"].toLowerCase() > b["title"].toLowerCase() ){
-				return 1;
-			} else {
-	　	　　	return 0;
-			}
-		});
+info.sort(function(a,b){
+
+    if(a["_index"] < b["_index"]){
+		return -1;
+
+    } else if(a["_index"] > b["_index"]){
+		return 1;
+
+	} else {
+		return 0;
+	}
+});
 		for(var k=0; k < info.length; k++){
 			delete info[k]["_index"];
 		}
