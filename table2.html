@@ -218,7 +218,7 @@ info.sort(function(a,b){
         	}
         }
         // コメント
-        (info[i].comment ? info[i].comment : "")
+        $("<td width='25%'>" + (info[i].comment || "") + "</td>").appendTo(str);
         str.appendTo(obj);
         count++;
     }
